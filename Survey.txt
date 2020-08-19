@@ -1,0 +1,393 @@
+### General Knowledge - demographic questions #################################################
+
+### Check out if this section should be at the end of the survey ###
+??? https://www.snapsurveys.com/blog/survey-demographic-questions-beginning-survey/
++++ Many survey researchers will answer “Definitely at the beginning,” and others will say, “No, at the end is the best place.” 
++++ Some may even suggest putting the most important demographic questions at the beginning and save the less important demographic questions for the end. 
+
+??? Demographic questions that are not closely related to our research - in the end
+End:
+	1. What is your employment status?
+		Fully employed by a company / organization
+		Grad Student
+		BSc Student
+		Self-employed
+		Freelancer
+		Partially employed by a company / organization
+		Retired
+		Other
+
+	2. Which of the following best describes your job role regardless of your position level?
+		Developer / Programmer / Software Engineer
+		Team Lead
+		Architect
+		DevOps Engineer / Infrastructure Developer / etc.
+		CIO / CEO / CTO
+		Technical support
+		UX / UI Designer
+		Data analyst / Data engineer/ Data scientist
+		Product Manager
+		Systems analyst
+		Instructor / Teacher / Tutor / etc.
+		Tester / QA Engineer
+		Other
+
+	3. Which of the following best describes the level of your current position?
+		Trainee
+		Junior
+		Middle
+		Senior
+		Other
+
+	4. What kind of development do you do?
+		Product development
+		In-house development
+		Custom-tailored software / websites / applications
+		Customer services development (websites, mobile apps, etc.)
+		Internal deployment and maintenance of third-party tools
+		Outsourcing
+		Open source projects
+		Research projects
+		Other
+
+	5. How long have you been working in Computer Science/Computer Engineering/IT?
+		None
+		Less than 1 year
+		1–2 years
+		3–5 years
+		6–10 years
+		More than 10 years
+
+	6. What software development process do you usually use the most? 
+		SCRUM
+		XP
+		TDD
+		WATERFALL
+		Kanban
+		Combined
+		Other
+	
+	7. What is the average lifetime of the projects that you work on?
+		A few days
+		A few weeks
+		A few months
+		A few years
+		More than 5 years
+
+	8. What programming language do you use the most?
+		Python
+		JavaScript
+		Java
+		C#
+		C
+		C++
+		PHP
+		Swift
+		Go
+		Ruby
+		Other		
+
+
+
+??? Demographic questions that are closely related to our research - in the beginning
+Beginning:
+	1. Regarding writing tests, do you follow a coverage goal for the whole codebase?
+		Yes, line coverage
+		Yes, statement coverage
+                Yes, pass coverage
+		Yes, method coverage
+		Yes, branch coverage
+		Yes, condition coverage
+		Yes, decision coverage
+		Yes, loop coverage
+		Yes, other coverages
+		No, I don't follow a coverage
+
+	2. What about code that is newly added?
+		Yes, line coverage
+                Yes, statement coverage
+                Yes, pass coverage
+                Yes, method coverage
+                Yes, branch coverage
+                Yes, condition coverage
+                Yes, decision coverage
+		Yes, loop coverage
+                Yes, other coverages
+                No, I don't follow a coverage
+
+	3. How often do you preventatively refactor your code without a specific reason?
+		Never
+		Every few months
+		1-2x per month
+		1-2x per week
+		daily
+
+	4. How often do you refactor your code when you are editing that code anyway?
+		Never
+                Only when I have to go back back to a part of the code 3 times or more
+                Only when I have to go back back to a part of the code 2 times or more
+                Only when I have to go back back to a part of the code
+                Always
+
+	5. How often do you find yourself in a situation that for creating a new test, it's easy to cut and paste other tests?
+              	Never
+                Rarely
+                Sometimes
+                Often
+                always
+
+	6. How often do you cut and paste tests?
+		Never
+		Rarely
+		Sometimes
+		Often
+		always
+
+	7. It is a good idea to cut and paste tests?
+		Strongly agree
+		Agree
+		Neutral
+		Disagree
+		Strongly disagree
+
+	8. How often do you preventatively refactor your tests without a specific reason? 
+		Never
+                Every few months
+                1-2x per month
+                1-2x per week
+                daily
+
+	9. How often do you refactor your tests when you are editing that code anyway?
+		Never
+                Only when I have to go back back to a part of the test 3 times or more
+                Only when I have to go back back to a part of the test 2 times or more
+                Only when I have to go back back to a part of the test 
+                Only when I'm trying to cut and paste a part or whole of a test
+		Always
+
+	10. Based on your personal opinion, can you please rank these criteria based on importance?
+		1. Maintainability
+		2. Conciseness 
+		3. Readability/Understandability
+		4. Extensibility
+		5. Don't Repeat Yourself
+
+
+
+### Specific Questions #################################################
+??? How do people feel about this section --- Ethics clearance (?)
+
+Defining clones in tests as a specific form of repetitions in the tests, please answer the following questions.
+
+	--- mention that this is in a Java context ---
+	We aim to refactor method-scope renamed clones in a test suite as well as structural clones where the syntactic bound is a method boundary. 
+	Renamed clones are structurally/syntactically identical fragments except for variations in identifiers, literals, types, layout, and comments.
+	Structural clones are simple clones that lie within a syntactic boundary following the syntactic structure of a particular language.
+
+	!!! show them some samples of two test clones !!!
+	--- Insert the example 1 (or 1 and 2 and 3) here ---
+
+	1. How often do you notice clones between some of the unit tests?
+		Never
+                Rarely
+                Sometimes
+                Often
+                always
+		
+	2. Do you usually notice these clones in the same test package or over different test packages? 
+		Almost always in the same package
+		Mostly in the same package
+		Almost half and half
+		Mostly over different packages
+		Almost always over different packages
+
+	3. When you notice a group of test clones, what is the size of this group?
+		Almost always 2
+		Mostly 2
+		Half 2 half more than 2
+		Mostly more than 2
+		Almost always more than 2
+
+
+
+### Specific Comparisson Questions #################################################
+
+##### clones with Type differences example #####
+##### given listing 2 vs listing 3 #####
+
+	1. Based on maintainability criteria, Listing 2 is ... maintainable compared to listing 3.
+		much more
+		more
+		similarly
+		less
+		much less
+
+	2. Based on conciseness criteria, Listing 2 is ... concise compared to listing 3.
+		much more
+                more
+                similarly
+                less
+                much less
+
+	3. Based on Readability/Understandability criteria, Listing 2 is ... Readable/Understandable compared to listing 3.
+                much more
+                more
+                similarly
+                less
+                much less
+
+	4. Based on extensibility criteria, Listing 2 is ... extensible compared to listing 3.
+                much more
+                more
+                similarly
+                less
+                much less
+
+	5. Based on repetition criteria (lack of repetition), Listing 2 has ... repetition compared to listing 3.
+                much more
+                more
+                similarly
+                less
+                much less
+
+	6. Overall, if you have an automated program that refactors listing 2 to listing 3 for you, would you use it? 
+		Definitely
+		Probably
+		Maybe
+		Probably not
+		Definitely not
+
+	7. What is your assessment of the quality of this refactoring (listing 2 vs listing 3)? 
+		Very high
+		High
+		Medium
+		Low
+		Very low		
+
+	8. If there is a very small chance that some of the refactored tests might not pass, and that you should run the tests again to check, would you still be willing to apply this refactoring?
+		Definitely
+                Probably
+                Maybe
+                Probably not
+                Definitely not
+
+
+##### Data and type differences example #####
+##### given listing 4 vs listing 5 #####
+
+	1. Based on maintainability criteria, Listing 4 is ... maintainable compared to listing 5.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        2. Based on conciseness criteria, Listing 4 is ... concise compared to listing 5.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        3. Based on Readability/Understandability criteria, Listing 4 is ... Readable/Understandable compared to listing 5.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        4. Based on extensibility criteria, Listing 4 is ... extensible compared to listing 5.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        5. Based on repetition criteria (lack of repetition), Listing 4 has ... repetition compared to listing 5.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        6. Overall, if you have an automated program that refactors listing 4 to listing 5 for you, would you use it? 
+                Definitely
+                Probably
+                Maybe
+                Probably not
+                Definitely not
+
+        7. What is your assessment of the quality of this refactoring (listing 4 vs listing 5)? 
+                Very high
+                High
+                Medium
+                Low
+                Very low
+
+        8. If there is a very small chance that some of the refactored tests might not pass, and that you should run the tests again to check, would you still be willing to apply this refactoring?
+                Definitely
+                Probably
+                Maybe
+                Probably not
+                Definitely not
+
+
+##### Behavioural differences example #####
+##### given listing 6 vs listing 7 #####
+
+	1. Based on maintainability criteria, Listing 6 is ... maintainable compared to listing 7.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        2. Based on conciseness criteria, Listing 6 is ... concise compared to listing 7.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        3. Based on Readability/Understandability criteria, Listing 6 is ... Readable/Understandable compared to listing 7.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        4. Based on extensibility criteria, Listing 6 is ... extensible compared to listing 7.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        5. Based on repetition criteria (lack of repetition), Listing 6 has ... repetition compared to listing 7.
+                much more
+                more
+                similarly
+                less
+                much less
+
+        6. Overall, if you have an automated program that refactors listing 6 to listing 7 for you, would you use it? 
+                Definitely
+                Probably
+                Maybe
+                Probably not
+                Definitely not
+
+        7. What is your assessment of the quality of this refactoring (listing 6 vs listing 7)? 
+                Very high
+                High
+                Medium
+                Low
+                Very low
+
+        8. If there is a very small chance that some of the refactored tests might not pass, and that you should run the tests again to check, would you still be willing to apply this refactoring?
+                Definitely
+                Probably
+                Maybe
+                Probably not
+                Definitely not
+
